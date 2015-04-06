@@ -37,20 +37,20 @@ Bienvenido: <a href="perfil.php?id=<?=$_SESSION['usuario_id']?>"><strong><?=$_SE
     </nav>
   </div>
 <!-- Termina codigo de menu de navegación-->
+<div class="boton-salir">
+  <a href="logout.php">Cerrar sesión</a>
+</div>
 <!--Inicia codigo de lista de reproducción-->
-<div class="contenedor" id="contenedor">
-  <!-- Buscador -->
+<!--Reproductor-->
+<div class="video-container">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/CyAuxyhul2U" frameborder="0" allowfullscreen></iframe>
+</div>
+ <!-- Buscador -->
 <input type="text" id="bus" name="bus" placeholder="Escribe tu canción" onkeyup="loadXMLDoc()" required />
 <input type="submit" value="AGREGAR" id="no-estilo" class="waves-effect waves-light btn-large" id="btnagregar">
 <div id="myDiv"></div>
 <!-- Lista -->
 
-    
-    
-
-</div>
-<!--Reproductor-->
- 
 <script type="text/javascript" src="assets/js/jquery-2.1.3.js"></script>
 <script type="text/javascript" src="assets/js/effects.js"></script>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>

@@ -11,6 +11,7 @@
 
         <!-- CSS -->
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="assets/css/celular.css">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/supersized.css">
         <link rel="stylesheet" href="assets/css/style.css">
@@ -38,15 +39,13 @@
             </form>
     <?php 
  }else { 
- ?> 
-        <p>Hola <strong><?=$_SESSION['usuario_nombre']?></strong> | <a href="logout.php">Salir</a></p> 
- <?php 
+      header("Location: index.php");
+ 
     } 
 ?>
         </div>
-
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/jquery-2.1.3.js"></script>
         <script src="assets/js/supersized.3.2.7.min.js"></script>
         <script src="assets/js/supersized-init.js"></script>
         <script src="assets/js/scripts.js"></script>
