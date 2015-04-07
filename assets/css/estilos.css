@@ -121,10 +121,14 @@ border: 0px;
 
 #bus {
     width: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: sticky;
 }
 
 #myDiv {
     height: 80px;
+    margin-left: 100px;
 }
 .column{
 width: 100%;
@@ -132,4 +136,12 @@ width: 100%;
 .intoColumn {
 width: 100px;
 display:inline-block; 
+}
+
+
+
+.video-posicion {
+    margin-left: 550px;
+    margin-top: 80px;
+    position: absolute;
 }

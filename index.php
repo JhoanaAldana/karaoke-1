@@ -10,6 +10,7 @@
 <!-- Import materialize.css-->
 <link rel="stylesheet" type="text/css" href="assets/css/materialize.css" media="screen,projection"/>
 <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">  
+<link rel="stylesheet" type="text/css" href="assets/css/celular.css">
 <!--Let browser know website is optimized for mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no-"/>
 </head>
@@ -42,10 +43,10 @@ Bienvenido: <a href="perfil.php?id=<?=$_SESSION['usuario_id']?>"><strong><?=$_SE
 </div>
 <!--Inicia codigo de lista de reproducción-->
 <!--Reproductor-->
-<div class="video-container">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/CyAuxyhul2U" frameborder="0" allowfullscreen></iframe>
-</div>
- <!-- Buscador -->
+<div class="video-posicion">
+<iframe width=700 height=500 src="https://www.youtube.com/embed/CyAuxyhul2U" frameborder="0" allowfullscreen></iframe>
+ </div>
+<!-- Buscador -->
 <input type="text" id="bus" name="bus" placeholder="Escribe tu canción" onkeyup="loadXMLDoc()" required />
 <input type="submit" value="AGREGAR" id="no-estilo" class="waves-effect waves-light btn-large" id="btnagregar">
 <div id="myDiv"></div>
