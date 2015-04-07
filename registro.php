@@ -13,6 +13,10 @@ include ('acceso_db.php');
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
+<<<<<<< HEAD
+=======
+	
+>>>>>>> e87103e8ebdb47f843cb6982fc28656e7b347afb
 	<meta charset="UTF-8">
 	<title>Registro usuario</title>
 </head>
@@ -20,7 +24,11 @@ include ('acceso_db.php');
     <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
+<<<<<<< HEAD
         <a href="acceso.php" class="brand-logo">ACISUM.com</a>
+=======
+        <a href="#!" class="brand-logo">ACISUM.com</a>
+>>>>>>> e87103e8ebdb47f843cb6982fc28656e7b347afb
         <ul class="right hide-on-med-and-down">
           <li>
           <?php

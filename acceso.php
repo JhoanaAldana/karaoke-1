@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     session_start();
     include('acceso_db.php');
@@ -60,3 +61,60 @@ Bienvenido: <a href="perfil.php?id=<?=$_SESSION['usuario_id']?>"><strong><?=$_SE
 <script type="text/javascript" src="assets/js/ajax.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>**ACISUM**</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/supersized.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="page-container">
+            <h1>Iniciar sesión</h1>
+  <?php 
+    session_start(); 
+    include('acceso_db.php'); 
+    if(empty($_SESSION['usuario_nombre'])) { // comprobamos que las variables de sesión estén vacías         
+?> 
+            <form action="comprobar.php" method="post">
+                <input type="text" name="usuario_nombre" class="username" placeholder="Nombre de usuario">
+                <input type="password" name="usuario_clave" class="password" placeholder="Contraseña">
+                <button type="submit" name="enviar">Entrar</button>
+                <div class="error"><span>+</span></div>
+            </form>
+    <?php 
+ }else { 
+      header("Location: index.php");
+ 
+    } 
+?>
+        </div>
+        <!-- Javascript -->
+        <script src="assets/js/jquery-2.1.3.js"></script>
+        <script src="assets/js/supersized.3.2.7.min.js"></script>
+        <script src="assets/js/supersized-init.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+    </body>
+
+</html>
+
+>>>>>>> e87103e8ebdb47f843cb6982fc28656e7b347afb
